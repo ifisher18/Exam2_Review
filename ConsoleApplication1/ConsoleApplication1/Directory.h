@@ -2,12 +2,20 @@
 
 #include <iostream>
 #include <vector>
+#include "Entry.h"
 using namespace std;
 
 class Directory{
 public:
 	// data field
-	string name;
+	string name;// name of the directory
+	//
+
+	// Constructor that sets default values
+	Directory() {
+		name = "";
+		entries = 0;
+	}
 
 	// adds a new name, and telephone number into the directory
 	void enter_entry(string, string, string);
@@ -24,6 +32,7 @@ public:
 private:
 	// data field
 	vector<Entry>entries;
+	//
 
 	// method returns the number of entries currently in the telephone directory
 	double get_total_entries();

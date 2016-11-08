@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include "Directory.h"
+#include "Entry.h"
 using namespace std;
 
 	// public data field
@@ -12,7 +13,7 @@ using namespace std;
 	// vector<Entry>entries
 
 	// adds a new name, and telephone number into the directory
-void Directory::enter_entry(string, string, string) {}
+void Directory::enter_entry(string EntryFname, string EntryLname , string Entry pNumber) {}
 
 	// get function that returns the specific name
 string Directory::get_name() {}

@@ -9,7 +9,7 @@ using namespace std;
 	//string firstname;
 	//string lastname;
 	//int number;
-};
+
 	// function that gets the first name of the entry
 string Entry::get_firstname() {
 	return firstname;
