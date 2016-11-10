@@ -12,20 +12,50 @@ using namespace std;
 	// private data field
 	// vector<Entry>entries
 
+	// Constructor directory
+Directory::Directory() {
+	name = "";
+
+}
 	// adds a new name, and telephone number into the directory
-void Directory::enter_entry(string EntryFname, string EntryLname , string Entry pNumber) {}
+void Directory::enter_entry(string EntryFname, string EntryLname , string EntryPnumber) {
+	
+}
 
 	// get function that returns the specific name
-string Directory::get_name() {}
+string Directory::get_name() {
+	return name;
+}
 
-	// overloaded method returns the telephone number of a person with specified first and last name
-double Directory::find_number(string, string) {}
+
 
 	// function that saves all the entries (in the entries vector) in a file called DirectoryOutput.txt
-void Directory::save() {}
+void Directory::save() {
+	entries.push_back(Fname);
+	entries.push_back(Lname);
+	entries.push_back(number);
+
+	ifstream output_file("DirectoryOuput.txt");
+	//save(entries) : "DirectoryOutput.txt"; // lol what are you doing ha
+	
+}
 
 	// method returns the number of entries currently in the telephone directory
-double Directory::get_total_entries() {}
+double Directory::get_total_entries() {
+	int count = 0;
+	for (int i = 0; i < entries.size(); i++) {
+		while (iofile >> entries) {
+			count++;
+			{
+	{
+					return count;
+}
 
-	// function that finds the number
-int Directory::find_number(string) {}
+	// overloaded method returns the telephone number of a person with specified first and last name
+	double Directory::find_number(string name) {
+		if (entries[firstname] = name) {
+			if (entries[lastname] = lastname) {
+				output >> number;
+			}
+		}
+	}

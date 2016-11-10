@@ -2,20 +2,20 @@
 
 #include <iostream>
 #include <vector>
+#include <fstream>
 #include "Entry.h"
 using namespace std;
 
 class Directory{
 public:
 	// data field
-	string name;// name of the directory
+	string Fname;// name of the directory
+	string Lname;
+	string number;
 	//
 
 	// Constructor that sets default values
-	Directory() {
-		name = "";
-		entries = 0;
-	}
+	Directory();
 
 	// adds a new name, and telephone number into the directory
 	void enter_entry(string, string, string);
@@ -24,7 +24,7 @@ public:
 	string get_name();
 
 	// overloaded method returns the telephone number of a person with specified first and last name
-	double find_number(string, string);
+	string find_number(string, string);
 
 	// function that saves all the entries (in the entries vector) in a file called DirectoryOutput.txt
 	void save();

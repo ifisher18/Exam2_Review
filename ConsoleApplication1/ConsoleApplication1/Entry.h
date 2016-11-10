@@ -9,7 +9,12 @@ class Entry {
 public:
 	// data field
 	
-
+	// Constructor
+	Entry() {
+		firstname = "";
+		lastname = "";
+		int number = 0;
+	}
 	// function that gets the first name of the entry
 	string get_firstname();
 

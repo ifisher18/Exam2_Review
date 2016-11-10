@@ -11,6 +11,7 @@ using namespace std;
 	//int number;
 
 	// function that gets the first name of the entry
+
 string Entry::get_firstname() {
 	return firstname;
 }
